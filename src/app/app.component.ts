@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { RouterOutlet,RouterLink,RouterLinkActive } from '@angular/router';
+import { HeroesListComponent } from './heroes-list/heroes-list.component';
+import { CrisisListComponent } from './crisis-list/crisis-list.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterLink, RouterLinkActive, HeroesListComponent,CrisisListComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Angular-router';
